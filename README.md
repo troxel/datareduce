@@ -1,5 +1,34 @@
 # reducedata
 
+## Synopsis
+
+```javascript
+const datareduce = require("datareduce")
+
+dsX = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
+dsY = [ 8, 4, 2, 4, 4, 9, 8, 8, 3, 9, 7, 2, 5, 3, 7, 3 ]
+reduced_len = 5
+
+var rdsX,rdsY
+[rdsX,rdsY] = datareduce.lt3b(dsX, dsY, reduced_len)
+
+console.log('reduced X',rdsX)
+console.log('reduced Y',rdsY)
+```
+
+Outputs 
+
+```javascript
+reduced X [ 1, 3, 6, 12, 16 ]
+reduced Y [ 8, 2, 9, 2, 3 ]
+```
+
+
+## Install 
+```
+>npm install git+https://github.com/troxel/datareduce.git
+```
+
 
 Node package to reduce or downsample data using the Largest Triangle Three Buckets algorithm
 
@@ -39,36 +68,8 @@ reducedata.lt3b:  19.792ms
 Comparison of reduced dataset between lttb and lt3b are EQUAL :)
 ```
 
-Note: If X axis data is a list of Date objects they will be converted to number (* 1) to facilitate processing. If you plotting package requires Date object you will need to convert back. 
+Note: If X axis data is a list of Date objects they will be converted to number (* 1) to facilitate processing. If your plotting package requires Date objects for the X-axis you will need to convert back.
 
 
-## Synopsis
-
-```javascript
-const datareduce = require("./datareduce")
-
-dsX = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ]
-dsY = [ 8, 4, 2, 4, 4, 9, 8, 8, 3, 9, 7, 2, 5, 3, 7, 3 ]
-reduced_len = 5
-
-var rdsX,rdsY
-[rdsX,rdsY] = datareduce.lt3b(dsX, dsY, 5)
-
-console.log('reduced X',rdsX)
-console.log('reduced Y',rdsY)
-```
-
-Outputs 
-
-```javascript
-reduced X [ 1, 3, 6, 12, 16 ]
-reduced Y [ 8, 2, 9, 2, 3 ]
-```
-
-
-### Install 
-```
-npm install git+https://github.com/troxel/datareduce.git
-```
 ~
 
