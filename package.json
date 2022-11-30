@@ -1,6 +1,6 @@
 {
   "name": "datareduce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Largest Triangle 3 Buckets with 1D Arrays as input",
   "main": "index.js",
   "scripts": {
