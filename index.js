@@ -13,6 +13,7 @@ const lt3b = function(dataX, dataY, rtnLen) {
    if (rtnLen >= dataLen || rtnLen === 0) { console.log("dataLen",dataLen); return [dataX,dataY] }
 
    var rtnX = [], rtnY = []
+
    rtnX[0] = dataX[0]
    rtnX[rtnLen - 1] = dataX[dataLen - 1]
    rtnY[0] = dataY[0]
@@ -32,7 +33,7 @@ const lt3b = function(dataX, dataY, rtnLen) {
       // Calc average for 3rd bucket (c)
       let avgX = 0, avgY = 0
       for ( var j=avgStart; j<avgStop; j++) {
-         avgX += dataX[j] * 1 
+         avgX += dataX[j] * 1  // x-axis is often date obj convert for calcs
          avgY += dataY[j]
       }
       
@@ -46,7 +47,7 @@ const lt3b = function(dataX, dataY, rtnLen) {
       //avgX = dataX[median]
 
 	   let max_area = 0, area = 0, maxK = 0
-      let aX = rtnX[i]
+      let aX = rtnX[i] * 1
       let aY = rtnY[i]
    
       for (var k = rngStart; k < rngStop; k++) {
@@ -59,8 +60,8 @@ const lt3b = function(dataX, dataY, rtnLen) {
             maxK = k
          }
       }
-
-      rtnX[i+1] = dataX[maxK] * 1
+      
+      rtnX[i+1] = dataX[maxK]
       rtnY[i+1] = dataY[maxK]
    }
    
