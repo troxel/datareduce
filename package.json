@@ -1,0 +1,30 @@
+{
+  "name": "datareduce",
+  "version": "1.0.0",
+  "description": "Largest Triangle 3 Buckets with 1D Arrays as input",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troxel/datereduce.git"
+  },
+  "keywords": [
+    "Downsample",
+    "Reduce Data",
+    "1D",
+    "arrays",
+    "reduce"
+  ],
+  "author": "Steven Troxel",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/troxel/datareduce/issues"
+  },
+  "homepage": "https://github.com/troxel/datareduce#readme",
+  "devDependencies": {
+    "d3fc-sample": "^3.0.5",
+    "downsample-lttb": "github:pingec/downsample-lttb"
+  }
+}
