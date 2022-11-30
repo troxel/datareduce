@@ -54,7 +54,8 @@ datay = [5,4,7...]
 
 When converting 100000s of data points the cost is significant to convert back and forth. 
 
-In the test directory there is a program that compares the performance with respect to other packages and checks against a reference to verify results are as expected
+In the test directory there is a program that compares the performance with respect to other packages and checks against a 
+reference to verify results are as expected
 
 ```
 Time to reduce 70000 data points to 1000
@@ -68,8 +69,11 @@ reducedata.lt3b:  19.792ms
 Comparison of reduced dataset between lttb and lt3b are EQUAL :)
 ```
 
-Note: If X axis data is a list of Date objects they will be converted to number (* 1) to facilitate processing. If your plotting package requires Date objects for the X-axis you will need to convert back.
+Results per Node.js v18.12.0 on Raspberry Pi 4. 
 
+Note: In order to run the performance and compare test script it will be required to install 'downsample-lttb' and 'd3fc-sample'
+
+Note: If X axis data is a list of Date objects they will be converted to number (* 1) to facilitate processing. If your plotting package requires Date objects for the X-axis you will need to convert back.
 
 ~
 
