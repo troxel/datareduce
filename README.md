@@ -1,4 +1,4 @@
-# reducedata - a  Largest Triangle Three Buckets (lttb) efficient downsample algorithm 
+# reducedata - a  Largest Triangle Three Buckets efficient downsample algorithm 
 
 ## Synopsis
 
@@ -26,15 +26,19 @@ reduced Y [ 8, 2, 9, 2, 3 ]
 
 ## Install 
 ```
->npm install git+https://github.com/troxel/datareduce.git
+npm install git+https://github.com/troxel/datareduce.git
 ```
+or 
 
+```
+npm install datareduce
+```
 
 Node package to reduce or downsample data using the Largest Triangle Three Buckets algorithm
 
 ## Description
 
-Implements a downsample technique known as Largest Triangle Three Buckets as defined in Sveinn Steinarsson MS thesis.
+Implements a downsample technique known as Largest Triangle Three Buckets (lttb or lt3b) as defined in Sveinn Steinarsson MS thesis.
 
 http://skemman.is/stream/get/1946/15343/37285/3/SS_MSthesis.pdf
 
