@@ -1,4 +1,4 @@
-# reducedata
+# reducedata - a  Largest Triangle Three Buckets (lttb) efficient downsample algorithm 
 
 ## Synopsis
 
