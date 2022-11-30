@@ -4,7 +4,7 @@
   "description": "Largest Triangle 3 Buckets with 1D Arrays as input",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test_proformance_and_verify.js"
   },
   "repository": {
     "type": "git",
