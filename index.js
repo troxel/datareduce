@@ -46,7 +46,7 @@ const lt3b = function(dataX, dataY, rtnLen) {
       //let median = floor(avgStart+(avgLen/2))
       //avgX = dataX[median]
 
-	   let max_area = 0, area = 0, maxK = 0
+	   let max_area = -1, area = 0, maxK = 0
       let aX = rtnX[i] * 1
       let aY = rtnY[i]
    
